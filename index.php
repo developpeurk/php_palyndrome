@@ -1,20 +1,9 @@
 <?php
-
-
-// kayak est palindrome
-while(true) {
-    $mot = readline("Entrez votre mot: ");
-    if($mot === '') {
-        exit('Fin du programme');
-    }
-
-    $reverse = strtolower(strrev($mot));
-    if(strtolower($mot) === $reverse) {
-        echo 'Ce mot est un palyndrome';
-        exit();
-    } else {
-      echo 'Ce mot n\'est pas un palyndrome';
-      exit();
-    }
-
-}
+$title = "Page d'accueil";
+require 'header.php';
+?>
+    <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    </div>
+<?php require 'footer.php' ?>
