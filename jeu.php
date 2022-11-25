@@ -23,6 +23,12 @@ require 'header.php'
 <?php endif; ?>
 
 <form action="/jeu.php" method="POST">
+<div class="form-group">
+        <input type="checkbox" class="form-control" name="parfum" value="Fraise">Fraise<br>
+        <input type="checkbox" class="form-control" name="parfum" value="Vanille">Vanille<br>
+        <input type="checkbox" class="form-control" name="parfum" value="Chocolat">Chocolat<br>
+
+    </div>
     <div class="form-group">
         <input type="number" class="form-control" name="chiffre" placeholder="entre 0 et 1000" value="<?= $value ?>">
     </div>
